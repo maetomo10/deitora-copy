@@ -16,13 +16,16 @@
     <header>
         <div class="container">
             <div class="header-left">
-                <a>30DAYSトライアル</a>
+                <a href="#">30DAYSトライアル</a>
             </div>
             <div class="header-right">
-                <a>お問い合わせ</a>
-                <a>コース一覧</a>
-                <a>デイトラとは</a>
+                <a href="#">お問い合わせ</a>
+                <a href="#">コース一覧</a>
+                <a href="#">デイトラとは</a> 
             </div>
+            <a href="#" class="menu-icon">
+                <span class="fa fa-bars"></span>
+            </a>
         </div>
     </header>
     <!--見出し-->
@@ -34,8 +37,8 @@
                     <h1>プロのWebエンジニアになろう!</h1>
                 </div>
                 <div class="word-2">
-                    <p>毎日設定された課題をこなすだけ！未経験から</p>
-                    <p>30日でプログラミングスキルが身につきます</p>
+                    <h2>毎日設定された課題をこなすだけ！未経験から</p>
+                    <h2>30日でプログラミングスキルが身につきます</p>
                 </div>
             </div>
         </div>
@@ -43,7 +46,7 @@
     <!--デイトラとはの説明-->
     <div class="about">
         <div class="container">
-            <p class="deitoratoha">デイトラとは</p>
+            <p class="midashi">デイトラとは</p>
         </div>    
         <div class="container-flex">
            <img class="item gazo" src="/img/about.png">
@@ -53,8 +56,39 @@
             </p>    
         </div>    
     </div>
-
+    <!--コース一覧-->
+    <div class="courses">
+        <div class="container">
+            <p class="midashi">コース一覧</p>
+        </div>
+        <div class="container-flex">
+            <div class="course">
+                <img src="img/web_first.png">
+                <p>HTML / CSS / Boostrap</p>
+            </div>
+            <div class="course">
+                <img src="img/web_second.png">
+                <p>HTML / CSS / Javascript / jQuery</p>
+            </div>
+            <div class="course">
+                <img src="img/web_third.png">
+                <p>PHP / Wordpress</p>
+            </div>
+        </div>
+    </div>
+    <!--お問い合わせ-->
+    <div class="message">
+        <div class="container">
+            <p class="midashi">お問い合わせ</p>
+            <p class="word-3">さあ今日から30日間を始めよう！</p>
+            <input class="mail" type="text" value="" placeholder="メールアドレス"><br>
+            <input class="btn"  type="button" value="無料で始める" formaction="#">
+        </div>
+    </div>
     <footer>
+        <div class="container">
+            <p>このサイトはHTML/CSSの学習のためにmaetomoがデイトラ様のHPを模写コーディングしたものです。</p>
+        </div>   
     </footer>
 </body>
 

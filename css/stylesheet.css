@@ -1,38 +1,47 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 header {
     background-color: white;
+    position: fixed;
+    z-index: 20;
     height: 60px;
+    line-height: 60px;
     width: 100%;
 }
 .container {
-    max-width: 1070px;
+    max-width: 960px;
     width: 80%;
     margin: 0 auto;
   }
-.header-left a{
+.header-left a {
     float: left;
-    line-height: 60px;
     color:darkblue;
     display: block;
     font-weight: 1000;
     font-size:20px
 }
 .header-right a{
+    transition: 1s;
     color:black;
     display: block;
     float: right;
-    line-height: 60px;
     margin-left: 50px;
     font-weight:700;
     font-size:15px
+}
+.menu-icon{
+    display: none;
+}
+.header-right a:hover{
+    background-color: darkgray;
 }
 .top {
     background-image: url(../img/main-vsual-nontitle.png);
@@ -46,24 +55,20 @@ header {
 .word-1{
     font-size:40px;
     margin-bottom: 40px;
+    line-height: 50px;
 }
-.word-1 h1{
-    margin-bottom: 10px;
-}
+
 .word-2{
     font-weight: 700;
     padding-bottom:110px;
     font-size:15px;
-}
-.word-2 p{
-    margin-bottom:5px;
+    line-height: 25px;
 }
 .about{
-    background-color: white;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
-.deitoratoha{
-    padding-top:50px;
+.midashi{
+
     color:darkblue;
     font-weight:1000;
     font-size: 25px;
@@ -71,7 +76,7 @@ header {
     text-align: center;
 }
 .container-flex{
-    max-width: 1070px;
+    max-width: 960px;
     width: 80%;
     margin: 0 auto;
     display: flex;    
@@ -79,11 +84,78 @@ header {
     flex-direction: row;
 }
 .item {
-    width: 47%;
+    width: 47%
 }
 .bun{
     color: darkblue;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 20px;
+}
+.courses{
+    padding-bottom: 100px;
+}
+.course  img{
+    display: block;
+    width:100%;
+}
+.course p{
+    padding-top:2px ;
+    color:darkblue;
+    font-weight:700;
+    font-size: 12px;
+    
+}
+.course{
+    width:30%
+}
+.message{
+    padding-bottom: 80px;
+    text-align: center;
+}
+.word-3{
+    color:darkblue;
+    font-weight:700;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.mail{
+    width:60%;
+    border-radius: 60px;
+    padding: 15px 15px; 
+    border:2px solid #ddd;
+    margin-bottom:30px;
+}
+.mail:focus{
+    border-radius: 60px;
+    border:2px solid #ddd;
+    outline: 0;
+}
+.btn{
+    cursor: pointer;
+    height:70px;
+    width: 30%;
+    background:rgba(255,53,18,0.5);
+    box-shadow:0px 5px rgba(255,53,18,1) ;
+    border-style: none;
+    color:white;
+    font-size: 20px;
+    outline:0;
+}
+.btn:hover{
+    background:rgba(255,53,18,0.7);
+}
+.btn:active{
+    box-shadow: none;
+    position: relative;
+    top:5px;
+} 
+footer {
+    border-top: 1px solid darkgray;
+}
+footer p{
+    padding-top:20px ;
+    padding-bottom: 20px;
+    float:right;
+    font-size: 10px;
 }
